@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "jsx-a11y/label-has-associated-control": [ 0, {}],
+    "global-require": 1,
+    "import/no-unresolved": "off",
+    "react/prop-types": "off"
+  },
+  "parser": "babel-eslint",
+  "env": {
+    "jest": true,
+    "browser": true,
+    "node": true
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "razzle-starter-website",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "dev": "razzle start",
+    "build": "razzle build",
+    "test": "razzle test --env=jsdom",
+    "lint:js": "eslint ./src",
+    "lint:css": "stylelint \"./src/**/*.css\"",
+    "lint": "npm run lint:js && npm run lint:css",
+    "prod": "NODE_ENV=production node build/server.js"
+  },
+  "dependencies": {
+    "@loadable/component": "^5.2.2",
+    "@loadable/server": "^5.3.0",
+    "@reach/router": "^1.2.1",
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "html-minifier": "^3.5.21",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@loadable/babel-plugin": "^5.2.2",
+    "@loadable/webpack-plugin": "^5.2.2",
+    "babel-eslint": "^10.0.1",
+    "enzyme": "^3.8.0",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "razzle": "^3.0.0-alpha.0",
+    "stylelint": "^9.10.0",
+    "stylelint-config-recommended": "^2.1.0"
+  }
+}
